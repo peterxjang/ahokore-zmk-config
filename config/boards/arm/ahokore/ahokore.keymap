@@ -24,5 +24,18 @@
         &mt LALT ESC  &mt LCMD BSPC &mt LCTRL TAB    &mt LC(LS(LG(LALT))) ENTER &lt 1 SPC  &lt 2 BSPC
       >;
     };
+    sym_layer {
+      // -----------------------------------------------------------------------------------------
+      // | 1!    | 2@    | 3#    | 4$    | 5%    | 6^    | 7&    | 8*    | 9(    | 0)    |
+      // | `~    | HOME  | PGUP  | PGDN  | END   | LEFT  | DOWN  | UP    | RGHT  | ;:    |
+      // | SHFT  |       |       | TAB   |       | -_    | =+    | [{    | ]}    | SHF\| |
+      //                 |       |       |       |       | (hold)|       |
+      bindings = <
+        &kp N1      &kp N2    &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8    &kp N9     &kp N0
+        &kp GRAVE   &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp SEMI
+        &kp LSHFT   &trans    &trans     &kp TAB    &trans     &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &mt RSHFT BSLH
+        &trans  &trans  &trans                                 &trans  &trans  &trans
+      >;
+    };    
   };
 };
